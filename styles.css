@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* -----------------------------------------------------NAVBAR -------------------------------------------------------------*/
+.navbar{
+    position: fixed;
+    width:100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+    padding: 15px 0;
+    background:lightsteelblue;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: dodgerblue;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #333;
+}
+
+.navbar.sticky .logo a span{
+    color: dodgerblue;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: dodgerblue;
+}
+
+/* ---------------------------------------BTN MENU-------------------------------------------------*/
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 52px;
+    background: dodgerblue;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: dodgerblue;
+}
+
+/* ---------------------------------------SECÇAO HOME---------------------------------------------------*/
+
+.home{
+    display: flex;
+    background: url("images/banner10-md.jpg") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text1{
+    font-size: 27px;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #000;
+}
+
+.home .home-content .text2{
+    font-size: 58px;
+    font-weight: 600;
+    margin-left: -3px;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #000;
+}
+
+.home .home-content .text3{
+    font-size: 35px;
+    margin: 5px 0;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #000;
+}
+
+.home .home-content .text3 span{
+    color: dodgerblue;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: lightsteelblue;
+    color: #111;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top:20px;
+    border: 2px solid lightsteelblue;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color:whitesmoke;
+    background: none;
+    border: 2px solid white;
+}
+
+/* ---------------------------CONTEM CODIGO SIMILAR ENTRE AS SECCÇOES ABOUT/SERVICES/SKILLS/CONTACTS ---------------------------------*/
+section{
+    padding: 100px 0;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+.services .serv-content, 
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 260px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color:  dodgerblue;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* ------------------------------------------------SECÇAO ABOUT ------------------------------------------------ */
+.about .title::after{
+    content: "Quem eu sou";
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: dodgerblue;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background: dodgerblue;
+    color: #fff;
+    font-size: 20px;
+    padding: 1px 30px;
+    margin-top: 20px;
+    border: 1px solid dodgerblue;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover{
+    color:dodgerblue;
+    background: none;
+    border: 1px solid dodgerblue;
+}
+
+/* SECÇAO SERVICES */
+.services, .teams{
+    color: #fff;
+    background: #111;
+}
+
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+
+.services .title::after,
+.teams .title::after{
+    background: #111;
+    content: "O que faço";
+}
+
+.services .serv-content .card{
+    width: calc(50% - 20px); /* original havia calc(33%-20px) 3 cards*/
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover{
+    background: dodgerblue;
+}
+
+.services .serv-content .card{
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i{
+    font-size: 50px;
+    color: dodgerblue;
+}
+
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*----------------------------------------------------- SECÇAO SKILLS----------------------------------------------- */
+
+.skills .title::after{
+    content: "Skills";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+.skills .skills-content .left a{
+    display: inline-block;
+    background: dodgerblue;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border: 1px solid dodgerblue;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover{
+    color:dodgerblue;
+    background: none;
+    border: 1px solid dodgerblue;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills-content .right .fa-html5::before{
+    color: #333;
+    font-size: 50px;
+}
+
+.skills-content .right .fa-css3-alt::before{
+    color: #333;
+    font-size: 50px;
+}
+
+.skills-content .right .fa-js-square::before{
+    color: #333;
+    font-size: 50px;
+}
+
+.skills-content .right .fa-angular::before{
+    color: #333;
+    font-size: 50px;
+}
+.skills-content .right .fa-git-square::before{
+    color: #333;
+    font-size: 50px;
+}
+
+.skills-content .right .fa-database::before{
+    color: #333;
+    font-size: 50px;
+}
+
+.skills-content .right .fa-php::before{
+    color: #333;
+    font-size: 50px;
+}
+
+.skills-content .right .fa-laravel::before{
+    color: #333;
+    font-size: 50px;
+}
+.skills-content .right .fa-node-js::before{
+    color: #333;
+    font-size: 50px;
+}
+.skills-content .right .fa-wordpress-simple::before{
+    color: #333;
+    font-size: 50px;
+}
+.skills-content .right .fa-sass::before{
+    color: #333;
+    font-size: 50px;
+}
+.skills-content .right .fa-aws::before{
+    color: #333;
+    font-size: 50px;
+}
+/* --------------------------------------------------------SECCAO TEAMS------------------------------------------- */
+
+.teams .title::after{
+    content:"Parceiros";
+}
+
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+
+.teams .carousel .card:hover{
+    background: dodgerblue;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid dodgerblue;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid dodgerblue!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active, .owl-dot:hover{
+    background: dodgerblue!important;
+}
+
+/* ----------------------------------------------SSECCAO CONTACTOS --------------------------------------------*/
+
+.contact .title::after{
+    content:"Fale comigo!";
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px); /*medidas com form de contacto*/
+    /*width: calc(100% - 30px);*/
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: dodgerblue;   
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+
+/*formulario de contacto*/
+.contact .right form .fields{
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .name{
+    margin-right: 10px;
+}
+
+.contact .right form .email{
+    margin-left: 10px;
+}
+
+.contact .right form .textarea{
+    height: 80px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width:  100%;
+    border: 1px solid lightslategray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button{
+    height: 50px;
+    width: 170px;
+    padding-top: 10px;
+}
+
+.contact .right form .button button{
+    height: 100%;
+    width: 100%;
+    border: 2px solid dodgerblue;
+    border-radius: 6px;
+    background: dodgerblue;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .button button:hover{
+    color:dodgerblue;
+    background: none;
+    border: 2px solid dodgerblue;
+}
+
+
+/* ----------------------------------------- SECCAO FOOTER -------------------------------------*/
+.footer{
+    bottom: 0;
+    max-width: 100%;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.links-footer{
+    background:lightsteelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    list-style: none;
+}
+
+i{
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+
+.copy{
+    color: #fff;
+    background:lightsteelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* ----------------------------------------------- RESPONSIVE MEDIA QUERIES ----------------------------------------------------*/
+
+    @media (max-width:1300px){
+        .home .max-width{
+            margin-left: 0px;
+        }
+    }
+    
+    @media (max-width:1100px){
+        .about .about-content .left img{
+            height: 350px;
+            width: 350px;
+        }
+    }
+    
+    @media (max-width:990px){
+        .max-width{
+            padding: 0 50px;
+        }
+    }
+    
+    
+    @media (max-width:947px){
+        .max-width{
+            padding: 0 50px;
+        }
+        .menu-btn{
+            display: block;
+            z-index: 999;
+        }
+        .menu-btn i.active:before{
+            content:"\f00d";
+        }
+        .max-width{
+            padding: 0 50px;
+        }
+        .navbar .menu{
+            position: fixed;
+            height: 100vh;
+            width:100%;
+            left: -100%;
+            top:0;
+            background: #111;
+            text-align: center;
+            padding-top: 80px;
+            transition: all 0.3s ease;
+        }
+        .navbar .menu.active{
+         left: -0;
+        }
+        .navbar .menu li{
+           display: block;
+        }
+        .navbar .menu li a{
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 25px;
+         }
+        .home .home-content .text2{
+            font-size: 55px;
+        }
+        
+        .home .home-content .text3{
+            font-size: 30px;
+        }
+    
+        .home .home-content a{
+            font-size: 23px;
+            padding: 10px 30px;
+        }
+
+        .max-width{
+            max-width: 800px;
+        }
+
+        .about .about-content .column{
+            width: 100%;
+        }
+
+        .about .about-content .left{
+            display: flex;
+            justify-content: center;
+            margin: 0px auto 60px;
+        }
+        
+        .about .about-content .right{
+            flex: 100%;
+        }
+
+        .services .serv-content .card{
+            width: calc(50% - 10px);
+            margin-bottom: 20px;
+        }
+        .skills .skills-content .column,
+        .contact .contact-content .column{
+            width: 100%;
+            margin-bottom: 35px;
+        }
+    }
+    
+    @media (max-width:690px){
+        .max-width{
+            padding: 0 23px;
+        }
+    
+        .home .home-content .text2{
+            font-size: 50px;
+        }
+        
+        .home .home-content .text3{
+            font-size: 28px;
+        }
+        
+        .home .home-content a{
+            font-size: 20px;
+        }
+
+        .services .serv-content .card,
+        .skills .skills-content .column{
+            width: 100%;
+        }
+    }
+    
+    @media (max-width:500px){
+        .home .home-content .text2{
+            font-size: 50px;
+        }
+        
+        .home .home-content .text3{
+            font-size: 25px;
+        }
+        
+        .home .home-content a{
+            font-size: 20px;
+            padding: 9px 20px;
+        }
+    }
+    
+    
