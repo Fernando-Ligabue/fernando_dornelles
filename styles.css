@@ -426,11 +426,11 @@ section .title::after{
     color: #333;
     font-size: 50px;
 }
-.skills-content .right .fa-sass::before{
+.skills-content .right .fa-react::before{
     color: #333;
     font-size: 50px;
 }
-.skills-content .right .fa-aws::before{
+.skills-content .right .fa-sass::before{
     color: #333;
     font-size: 50px;
 }
