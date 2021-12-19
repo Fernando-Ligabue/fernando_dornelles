@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 
 *{
     margin:0;
@@ -23,7 +24,7 @@ html{
     width:100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -46,8 +47,6 @@ html{
 
 .navbar .logo a span{
     color: dodgerblue;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: #333;
 }
 
 .navbar.sticky .logo a span{
@@ -117,7 +116,7 @@ html{
     height: 100vh;
     color: white;
     min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .home .max-width{
@@ -126,23 +125,17 @@ html{
 
 .home .home-content .text1{
     font-size: 27px;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: #000;
 }
 
 .home .home-content .text2{
     font-size: 58px;
     font-weight: 600;
     margin-left: -3px;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: #000;
 }
 
 .home .home-content .text3{
     font-size: 35px;
     margin: 5px 0;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: #000;
 }
 
 .home .home-content .text3 span{
@@ -172,7 +165,7 @@ section{
     padding: 100px 0;
 }
 .about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .about .about-content,
@@ -192,7 +185,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 section .title::before{
@@ -582,7 +575,7 @@ section .title::after{
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .contact .right form .textarea textarea{
@@ -636,15 +629,15 @@ section .title::after{
     list-style: none;
 }
 
-i{
+footer i{
     font-size: 35px;
     width: 50px;
     height: 50px;
-    color: #fff;
+    color: #000;
 }
 
 .copy{
-    color: #fff;
+    color: #000;
     background:lightsteelblue;
     display: flex;
     align-items: center;
@@ -788,5 +781,3 @@ i{
             padding: 9px 20px;
         }
     }
-    
-    
