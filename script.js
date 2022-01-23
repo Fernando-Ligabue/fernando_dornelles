@@ -26,8 +26,8 @@ $(document).ready(function(){
     //typing animation
     var typed = new Typed(".typing", {
         strings: ["FullStack Web Developer", 
-        "Personal Trainer", 
-        "Freelancer",],
+        "Flutter Developer", 
+        "OutSystems Student",],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -35,8 +35,8 @@ $(document).ready(function(){
 
     var typed = new Typed(".typing-2", {
         strings: ["FullStack Web Developer", 
-        "Personal Trainer", 
-        "Freelancer"],
+        "Flutter Developer", 
+        "OutSystems Student"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
