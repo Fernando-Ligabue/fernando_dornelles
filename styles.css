@@ -427,6 +427,21 @@ section .title::after{
     color: #333;
     font-size: 50px;
 }
+.skills-content .right .dart{
+    opacity: 0.85;
+    width: 40px;
+    height: 40px;
+}
+.skills-content .right .flutter{
+    opacity: 0.85;
+    width: 40px;
+    height: 40px;
+}
+
+.skills .skills-content .right .info-flutter{
+    margin-top: 1rem;
+}
+
 /* --------------------------------------------------------SECCAO TEAMS------------------------------------------- */
 
 .teams .title::after{
@@ -734,7 +749,7 @@ footer i{
         }
 
         .services .serv-content .card{
-            width: calc(50% - 10px);
+            width: 100%;
             margin-bottom: 20px;
         }
         .skills .skills-content .column,

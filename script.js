@@ -36,7 +36,7 @@ $(document).ready(function(){
     var typed = new Typed(".typing-2", {
         strings: ["FullStack Web Developer", 
         "Flutter Developer", 
-        "OutSystems Student"],
+        "OutSystems Student",],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
